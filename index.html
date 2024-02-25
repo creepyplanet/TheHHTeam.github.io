@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local de MMA</title>
+    <link rel="icon" href="HH.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('fondo.png'); /* Agrega una imagen de fondo */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #fff;
+            line-height: 1.6;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega sombra al texto */
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        nav a {
+            color: #ffffff; /* Color dorado */
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffd700; /* Cambio de color al pasar el mouse */
+        }
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            margin: 0;
+        }
+        h1 {
+            font-size: 3em;
+            letter-spacing: 2px;
+        }
+        h2 {
+            font-size: 2em;
+            color: #ffd700; /* Color dorado */
+            margin-bottom: 30px;
+            text-transform: uppercase; /* Convierte el texto a mayúsculas */
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        address {
+            font-style: normal;
+            margin: 20px 0;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+            padding: 15px 0;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+            /* Estilos para la pestaña */
+    .tab {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ffd90000;
+        border: 1px solid #ffd90000;
+        cursor: pointer;
+    }
+    
+    /* Estilos para el menú desplegable */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #0000007a;
+        min-width: 160px;
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: #f2f2f2;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #000000;
+    }
+    
+    /* Mostrar el menú desplegable al pasar el ratón sobre la pestaña */
+    .tab:hover .dropdown-content {
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Local de MMA</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <a href="#inicio">Inicio</a>
+            <a href="horario.html">Horario</a>
+            <a href="#ubicacion">Ubicación</a>
+            <a href="https://grazias.es/">Ropa</a>
+            <div class="tab">Redes
+                <!-- Contenido del menú desplegable -->
+                <div class="dropdown-content">
+                    <a href="https://www.instagram.com/equiphernandez/">Instagram</a>
+                    <a href="#">FaceBook</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="inicio">
+        <div class="container">
+            <h2>Bienvenidos a nuestro local de MMA llamado HH Team</h2>
+            <p>Somos un centro dedicado a las artes marciales mixtas (MMA) ofreciendo entrenamiento de calidad para todas las edades y niveles de experiencia.</p>
+        </div>
+    </section>
+    <section id="clases">
+        <div class="container">
+            <h2>Clases</h2>
+            <p>Ofrecemos una variedad de clases, incluyendo:</p>
+            <ul>
+                <li>MMA para principiantes</li>
+                <li>MMA avanzado</li>
+                <li>Boxeo</li>
+                <li>Kick-Boxing</li>
+            </ul>
+        </div>
+    </section>
+    <section id="ubicacion">
+        <div class="container">
+            <h2>Ubicación</h2>
+            <address>
+                Calle Almorávides, Nª 3<br>
+                Almeria(Aguadulce), España<br>
+                Teléfono: 555-123-4567
+            </address>
+        </div>
+    </section>
+</body>
+</html>
