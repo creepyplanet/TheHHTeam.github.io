@@ -1,44 +1,246 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAA1BMVEW1srKXcx+7AAAASElEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABODcYhAAEl463hAAAAAElFTkSuQmCC'); /* Agrega una imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega sombra al texto */
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente */
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.565); /* Fondo semi-transparente */
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+    color: #ffffff; /* Color blanco */
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700; /* Cambio de color al pasar el mouse */
+}
+
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0;
 }
 
 h1 {
-    text-align: center;
-    color: #333;
+    font-size: 3em;
+    letter-spacing: 2px;
+    color: #ffd700; /* Color dorado */
 }
 
-table {
+h2 {
+    font-size: 2em;
+    color: #ffd700; /* Color dorado */
+    margin-bottom: 30px;
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+address {
+    font-style: normal;
+    margin: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+.small-image {
+    position: absolute;
+    top: 15px;
+    left: 70px;
+    width: 80px; /* Tamaño deseado */
+    height: 75px; /* Tamaño deseado */
+    border: 5px solid #fff; /* Borde blanco de 2px */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta partes de la imagen si es más grande que el cuadro */
+}
+
+.small-image img {
+    width: 100%; /* Ajustar la imagen al tamaño del contenedor */
+    height: auto; /* Altura automática */
+}
+
+.logo {
+    flex: 1; /* El logo ocupará un tercio del espacio disponible */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+.menu {
+    flex: 2; /* El menú de navegación ocupará dos tercios del espacio disponible */
+    text-align: center; /* Alineación del texto a la derecha */
+}
+
+.logo img {
+    width: 150px; /* Ajustar el tamaño del logo según sea necesario */
+    height: auto;
+}
+
+.white-section {
+    background-color: #00000096;
+    padding: 50px 0;
+    text-align: right;
+}
+
+.white-section h2, .white-section p {
+    color: #000000; /* Color negro */
+}
+
+.container-menu {
+    width: 80%;
+    margin: 0 auto;
+    overflow: show; /* Clearfix para contener las columnas */
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden; /* Clearfix para contener las columnas */
+}
+
+.image-column {
+    float: left;
+    width: 30%; /* Ancho de la columna de la imagen */
+    height: 40%; /* alto de la columna de la imagen */
+}
+
+.text-column {
+    float: right;
+    width: 60%; /* Ancho de la columna de texto */
+}
+
+.image-column img {
     width: 100%;
-    border-collapse: collapse;
+    height: auto;
 }
 
-th, td {
-    border: 1px solid #dddddd;
+.text {
+    padding: 20px;
+    background-color: #f2f2f2; /* Color de fondo del área de texto */
+    border: 1px solid #ccc; /* Borde del área de texto */
+    border-radius: 5px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+.tab {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd90000;
+    border: 1px solid #ffd90000;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0000007a;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #f2f2f2;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #000000;
+}
+
+.tab:hover .dropdown-content {
+    display: block;
+}
+
+.class-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.class {
+    width: 200px;
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.class img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilos para las ubicaciones */
+.location-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.location {
+    width: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.location img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.trust-process {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    border: 2px solid #dddddd;
     padding: 10px;
+    width: 1200px;
+    margin: 20px auto;
+    border-radius: 4px;
+    background-color: #dedddd;
 }
-
-th {
-    background-color: #333;
-    color: white;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-.class-math { background-color: #ff9999; }
-.class-lang { background-color: #99ccff; }
-.class-sci { background-color: #99ff99; }
-.class-hist { background-color: #ffcc99; }
-.class-art { background-color: #ff99ff; }
-.class-sport { background-color: #ffff99; }
-.class-geo { background-color: #cc99ff; }
-.class-chem { background-color: #99ffff; }
-.class-eng { background-color: #ffccff; }
-.class-phil { background-color: #ffcc99; }
-.class-pe { background-color: #99ff99; }
-.class-rel { background-color: #ff9999; }
-
-/* Agrega estilos para las clases adicionales aquí */
