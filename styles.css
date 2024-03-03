@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
     margin: 0;
@@ -37,7 +38,6 @@ nav a {
 nav a:hover {
     color: #ffd700; /* Cambio de color al pasar el mouse */
 }
-
 
 section {
     padding: 50px 0;
@@ -86,8 +86,6 @@ address {
     margin: 0 auto;
 }
 
-
-
 .small-image {
     position: absolute;
     top: 15px;
@@ -134,6 +132,7 @@ address {
     margin: 0 auto;
     overflow: show; /* Clearfix para contener las columnas */
 }
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -163,6 +162,7 @@ address {
     border-radius: 5px; /* Borde redondeado */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
 }
+
 .tab {
     position: relative;
     display: inline-block;
@@ -195,6 +195,7 @@ address {
     display: block;
 }
 
+/* Estilos para las clases */
 .class-container {
     display: flex;
     justify-content: space-around;
@@ -233,14 +234,28 @@ address {
     height: auto;
     border-radius: 5px;
 }
-.trust-process {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 18px;
-    border: 2px solid #dddddd;
-    padding: 10px;
-    width: 1200px;
-    margin: 20px auto;
-    border-radius: 4px;
-    background-color: #dedddd;
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Reducir el ancho del contenedor */
+    }
+
+    .image-column, .text-column {
+        width: 100%; /* Ajustar las columnas al ancho completo */
+        float: none; /* Deshabilitar la flotación */
+    }
+
+    .white-section, section {
+        padding: 30px 0; /* Reducir el padding en secciones */
+    }
+
+    .small-image {
+        position: static; /* Cambiar la posición a estática */
+        margin-bottom: 20px; /* Agregar margen inferior */
+    }
+
+    .class, .location {
+        width: 100%; /* Ajustar el ancho de las clases y ubicaciones al 100% */
+    }
 }
